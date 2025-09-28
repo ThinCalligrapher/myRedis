@@ -88,7 +88,7 @@ int main() {
             continue; // error - break loop beause its 0 for true and -1 for false
         }
 
-        // do_something(connfd);
+        do_something(connfd);
         printf("Cleint connected on fd=%d\n", connfd);
         close(connfd); // close function from unistd close man!! fd = file descriptor!
     } // so the accept call returns the peers IP address which is why addrlen is input, and output size! so it needs to be an address
